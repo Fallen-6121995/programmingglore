@@ -17,6 +17,7 @@ const Hero = () => {
   const getHomePageData = () => {
     db.collection("header_content").get().then((data)=>{
       data.forEach((doc) => {
+        console.log("helloo.....")
         const data = doc.data();
         setHeroData({
           mainHeading:data.main_heading,
